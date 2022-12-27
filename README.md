@@ -18,11 +18,11 @@
 
 1° `git clone git@github.com:albertassihatus/CashforceTest.git` - Clone o repositório para sua máquina<br />
 
-2° `cd CashforceTest` - Entre na pasta do repositório clonado<br />
+2° `cd CashforceTest/backend e /frontend` - Entre na pasta do repositório clonado<br />
 
 3° `npm install` - Instale as depedências<br />
 
-4° `npm start` - Execute o programa<br />
+4° `npm run serve (frontend) - npm run start (backend) ` - Execute o programa<br />
 **Sugestão: Baixe o programa Insomina para executar cada operação do CRUD: https://snapcraft.io/install/insomnia/ubuntu
 
 #### Conexão com o Banco 
