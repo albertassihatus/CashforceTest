@@ -1,11 +1,11 @@
 const { Providers } = require('../models');
 
-  const getAllCat = async () => {
-    const categories = await Providers.findAll();
+  const getAllProviders = async () => {
+    const providers = await Providers.findAll();
 
-    return categories;
+    return providers;
   };
 
   module.exports = {
-    getAllCat,
+    getAllProviders,
   };

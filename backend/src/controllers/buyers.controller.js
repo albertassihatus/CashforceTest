@@ -1,12 +1,11 @@
 const buyersService = require('../services/buyers.service');
-// const jwtUtil = require('../utils/jwt.util');
 
-const getAllCat = async (_req, res) => {
-  const categories = await buyersService.getAllCat();
+const getAllBuyers = async (_req, res) => {
+  const buyers = await buyersService.getAllBuyers();
 
-  return res.status(200).json(categories);
+  return res.status(200).json(buyers);
 };
 
 module.exports = {
-  getAllCat,
+  getAllBuyers,
   };

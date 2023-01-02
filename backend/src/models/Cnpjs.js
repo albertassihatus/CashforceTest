@@ -23,13 +23,6 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'cnpjs'
     },
     );
-
-    // Cnpjs.associate = (models) => {
-    //   Cnpjs.hasMany(models.Orders, {
-    //     as: 'cnpjs',
-    //     foreignKey: 'cnpjid',
-    //   })
-    // }
   
     return Cnpjs;
   };
