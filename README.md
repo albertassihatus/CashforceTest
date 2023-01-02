@@ -1,6 +1,7 @@
 # Boas vindas ao repositório do teste da Cashforce!
 
- O projeto consiste em uma API que realiza um READ de ordens de notas fiscais. Para criação das tabelas do banco de dados, foi utilizado a técnica de Mapeamento Objeto-Relacional (`ORM`) através do pacote `sequelize` do Node.js.<br />
+ O projeto consiste em criar e consumir uma API através de um banco de dados disponibilizado, criar uma página front-end 
+ [Modelo Figma](https://www.figma.com/file/NY1fe6PAZ6DKeD9eOzyrju/Teste-Cashfroce?node-id=0%3A1&t=7eEfQv4nZgm4Cx2x-0). Para criação das tabelas do banco de dados, foi utilizado a técnica de Mapeamento Objeto-Relacional (`ORM`) através do pacote `sequelize` do Node.js.<br />
  A implementação do código foi feita baseada na arquitetura de software MSC (Model-Service-Controller)
  
 ---
