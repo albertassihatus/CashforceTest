@@ -18,12 +18,9 @@
   },
   "main": "src/server.js",
   "scripts": {
-    "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate",
     "start": "node .",
     "start:test": "API_PORT=3030 NODE_ENV=test npm start",
     "kill:test": "if lsof -t -i:3030; then kill -9 $(lsof -t -i:3030); fi",
-    "drop": "npx sequelize-cli db:drop",
-    "seed": "npx sequelize-cli db:seed:all",
     "pretest": "(npm run kill:test && NODE_ENV=test npm run start:test) &",
     "test": "npx -y wait-on -t 300000 http://localhost:3030 && NODE_ENV=test API_PORT=3030 jest -i --verbose --forceExit",
     "test:dev": "npx -y wait-on -t 300000 http://localhost:3000 && NODE_ENV=development API_PORT=3000 jest -i --verbose --forceExit",
@@ -44,6 +41,7 @@
     "nodemon": "2.0.15",
     "sequelize-cli": "6.2.0",
     "sequelize-jest-helpers-trybe": "1.0.0",
+    "sequelize-test-helpers": "^1.4.3",
     "supertest": "4.0.2",
     "wait-on": "6.0.1"
   }
