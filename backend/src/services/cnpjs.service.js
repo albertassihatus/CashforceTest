@@ -1,11 +1,11 @@
 const { Cnpjs } = require('../models');
 
-  const getAllCat = async () => {
-    const categories = await Cnpjs.findAll();
+  const getAllCnpjs = async () => {
+    const cnpjs = await Cnpjs.findAll();
 
-    return categories;
+    return cnpjs;
   };
 
   module.exports = {
-    getAllCat,
+    getAllCnpjs,
   };

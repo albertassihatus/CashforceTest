@@ -4,6 +4,6 @@ const cnpjsController = require('../controllers/cnpjs.controller');
    
 const router = express.Router();
 
-router.get('/', cnpjsController.getAllCat);
+router.get('/', cnpjsController.getAllCnpjs);
 
 module.exports = router;

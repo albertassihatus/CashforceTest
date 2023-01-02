@@ -4,6 +4,6 @@ const buyersController = require('../controllers/buyers.controller');
    
 const router = express.Router();
 
-router.get('/', buyersController.getAllCat);
+router.get('/', buyersController.getAllBuyers);
 
 module.exports = router;

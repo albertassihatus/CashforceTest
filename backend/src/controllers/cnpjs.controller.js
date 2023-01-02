@@ -1,12 +1,11 @@
 const cnpjsService = require('../services/cnpjs.service');
-// const jwtUtil = require('../utils/jwt.util');
 
-const getAllCat = async (_req, res) => {
-  const categories = await cnpjsService.getAllCat();
+const getAllCnpjs = async (_req, res) => {
+  const cnpjs = await cnpjsService.getAllCnpjs();
 
-  return res.status(200).json(categories);
+  return res.status(200).json(cnpjs);
 };
 
 module.exports = {
-  getAllCat,
+  getAllCnpjs,
   };

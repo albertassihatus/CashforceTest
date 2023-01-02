@@ -4,6 +4,6 @@ const ordersController = require('../controllers/orders.controller');
    
 const router = express.Router();
 
-router.get('/', ordersController.getAllCat);
+router.get('/', ordersController.getAllOrders);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 const { Orders, Buyers, Providers } = require('../models');
 
-const getAllCat = async () => {
-  const getAllPosts = await Orders.findAll({
+const getAllOrders = async () => {
+  const getAll = await Orders.findAll({
     include: [
       { model: Buyers,
         as: 'buyer',
@@ -15,9 +15,9 @@ const getAllCat = async () => {
   ],
   });
 
-return getAllPosts;
+return getAll;
 };
 
   module.exports = {
-    getAllCat,
+    getAllOrders,
   };
